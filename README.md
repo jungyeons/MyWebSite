@@ -17,7 +17,7 @@ Open `index.html` in a browser.
 ## GitHub Pages
 
 This repository includes a GitHub Actions workflow that publishes the static
-site from the `main` branch to GitHub Pages.
+site after GitHub Pages is enabled for the repository.
 
 ## Featured Areas
 

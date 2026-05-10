@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="배정연의 백엔드, 보안, 데이터, 프로덕트 프로젝트를 정리한 포트폴리오 웹사이트입니다."
+      content="배정연의 백엔드, 보안, AI/데이터, 인프라 프로젝트를 PDF와 GitHub 레포 근거로 정리한 포트폴리오입니다."
     >
-    <title>배정연 | Portfolio Lab</title>
+    <title>배정연 | Backend & Security Portfolio</title>
     <link rel="preconnect" href="https://avatars.githubusercontent.com">
     <link rel="preconnect" href="https://unpkg.com">
     <link rel="stylesheet" href="styles.css">
@@ -16,9 +16,10 @@
     <header class="site-header">
       <a class="brand" href="#top" aria-label="배정연 포트폴리오 홈">
         <span class="brand-mark">BJ</span>
-        <span>배정연 Portfolio Lab</span>
+        <span>배정연 Portfolio</span>
       </a>
       <nav class="nav-links" aria-label="주요 메뉴">
+        <a href="#focus">방향</a>
         <a href="#projects">프로젝트</a>
         <a href="#skills">역량</a>
         <a href="#contact">연락</a>
@@ -31,17 +32,17 @@
     <main id="top">
       <section class="intro-section" aria-labelledby="intro-title">
         <div class="intro-copy">
-          <p class="eyebrow">Backend · Security · Data</p>
+          <p class="eyebrow">Backend · Security · Infra</p>
           <h1 id="intro-title">배정연</h1>
           <p class="intro-text">
-            Java/Spring 기반 백엔드와 데이터베이스를 중심으로 서비스를 만들고,
-            보안 관점에서 취약점 분석과 실전형 학습 도구를 함께 쌓아가는 개발자입니다.
-            이 페이지는 GitHub에 흩어진 프로젝트를 면접에서 바로 설명할 수 있게 정리한 포트폴리오입니다.
+            Java/Spring 백엔드를 중심으로 서비스를 만들고, 보안 취약점 분석과 배포 자동화까지
+            직접 연결해 보는 개발자입니다. 포트폴리오 PDF와 개인·조직 GitHub 레포를 함께 검토해
+            실제로 설명 가능한 프로젝트만 앞에 세웠습니다.
           </p>
           <div class="intro-actions" aria-label="포트폴리오 주요 동작">
             <a class="primary-action" href="#projects">
               <i data-lucide="folder-kanban" aria-hidden="true"></i>
-              핵심 프로젝트 보기
+              대표 프로젝트
             </a>
             <button class="ghost-action" id="copyPitch" type="button">
               <i data-lucide="copy" aria-hidden="true"></i>
@@ -59,41 +60,65 @@
           >
           <dl class="quick-facts">
             <div>
-              <dt>핵심 방향</dt>
-              <dd>백엔드 구현력과 보안 감각을 같이 보여주는 포트폴리오</dd>
+              <dt>학력</dt>
+              <dd>명지대학교 융합소프트웨어학부 학사 졸업</dd>
             </div>
             <div>
-              <dt>주요 스택</dt>
-              <dd>Java, Spring Boot, JPA, MySQL, Docker, GitHub Actions</dd>
+              <dt>자격</dt>
+              <dd>정보처리기사, SQLD · 네트워크/리눅스 자격 학습 중</dd>
             </div>
             <div>
-              <dt>강점</dt>
-              <dd>학습 로그를 실제 도구와 서비스 구조로 바꾸는 실행력</dd>
+              <dt>현재 강점</dt>
+              <dd>서비스 구현, 취약점 재현, EC2·Docker·Actions 기반 운영 경험</dd>
             </div>
           </dl>
         </aside>
       </section>
 
-      <section class="metrics-section" aria-label="포트폴리오 지표">
+      <section class="metrics-section" aria-label="검토 근거 요약">
         <article class="metric">
-          <span class="metric-value">40+</span>
-          <span class="metric-label">GitHub 저장소</span>
+          <span class="metric-value">15p</span>
+          <span class="metric-label">포트폴리오 PDF 반영</span>
         </article>
         <article class="metric">
-          <span class="metric-value">4</span>
-          <span class="metric-label">대표 분야</span>
+          <span class="metric-value">21+23</span>
+          <span class="metric-label">웹·앱 보안 실습 기능</span>
         </article>
         <article class="metric">
-          <span class="metric-value">2026</span>
-          <span class="metric-label">포트폴리오 리프레시</span>
+          <span class="metric-value">5+</span>
+          <span class="metric-label">개인/팀/조직 레포 확인</span>
         </article>
+      </section>
+
+      <section class="section focus-section" id="focus" aria-labelledby="focus-title">
+        <div class="section-heading">
+          <p class="eyebrow">Interview positioning</p>
+          <h2 id="focus-title">먼저 보여줄 서사</h2>
+        </div>
+        <div class="focus-grid">
+          <article class="focus-card">
+            <i data-lucide="server-cog" aria-hidden="true"></i>
+            <h3>서비스를 끝까지 연결하는 백엔드</h3>
+            <p>Spring MVC/Boot, JPA/MyBatis, MySQL 기반으로 사용자 흐름과 데이터 모델을 실제 서비스 단위로 구현했습니다.</p>
+          </article>
+          <article class="focus-card">
+            <i data-lucide="shield-alert" aria-hidden="true"></i>
+            <h3>공격 흐름을 아는 보안 감각</h3>
+            <p>OWASP Top 10, 웹·모바일 취약점 주입, Burp Suite/OWASP ZAP 분석을 통해 방어 관점의 설계를 익혔습니다.</p>
+          </article>
+          <article class="focus-card">
+            <i data-lucide="workflow" aria-hidden="true"></i>
+            <h3>배포와 운영까지 보는 인프라 경험</h3>
+            <p>EC2, Docker Compose, Nginx SSL, self-hosted GitHub Actions Runner로 팀 프로젝트 배포 문제를 해결했습니다.</p>
+          </article>
+        </div>
       </section>
 
       <section class="section" id="projects" aria-labelledby="projects-title">
         <div class="section-heading section-heading-row">
           <div>
-            <p class="eyebrow">Repository map</p>
-            <h2 id="projects-title">먼저 보여줄 프로젝트</h2>
+            <p class="eyebrow">Evidence-based repository map</p>
+            <h2 id="projects-title">대표 프로젝트</h2>
           </div>
           <label class="search-box" for="projectSearch">
             <i data-lucide="search" aria-hidden="true"></i>
@@ -106,6 +131,10 @@
             <i data-lucide="sparkles" aria-hidden="true"></i>
             전체
           </button>
+          <button class="filter" type="button" data-filter="featured">
+            <i data-lucide="star" aria-hidden="true"></i>
+            우선 어필
+          </button>
           <button class="filter" type="button" data-filter="backend">
             <i data-lucide="server" aria-hidden="true"></i>
             백엔드
@@ -114,9 +143,13 @@
             <i data-lucide="shield-check" aria-hidden="true"></i>
             보안
           </button>
-          <button class="filter" type="button" data-filter="data">
-            <i data-lucide="database" aria-hidden="true"></i>
-            데이터
+          <button class="filter" type="button" data-filter="ai">
+            <i data-lucide="brain-circuit" aria-hidden="true"></i>
+            AI·데이터
+          </button>
+          <button class="filter" type="button" data-filter="infra">
+            <i data-lucide="cloud-cog" aria-hidden="true"></i>
+            인프라
           </button>
           <button class="filter" type="button" data-filter="product">
             <i data-lucide="layout-dashboard" aria-hidden="true"></i>
@@ -128,6 +161,35 @@
         <div class="project-grid" id="projectGrid"></div>
       </section>
 
+      <section class="section source-band" aria-labelledby="source-title">
+        <div class="section-heading">
+          <p class="eyebrow">Sources checked</p>
+          <h2 id="source-title">근거로 삼은 자료</h2>
+        </div>
+        <div class="source-grid">
+          <article>
+            <span>PDF</span>
+            <strong>배정연_포트폴리오.pdf</strong>
+            <p>프로젝트별 역할, 기여, 성과를 기준으로 카드 문구를 재작성했습니다.</p>
+          </article>
+          <article>
+            <span>GitHub</span>
+            <strong>TrustRide org</strong>
+            <p>중고차 거래 웹과 AI 통합 시스템 README를 확인했습니다.</p>
+          </article>
+          <article>
+            <span>GitHub</span>
+            <strong>FC-DEV3-Final-Project</strong>
+            <p>ZOOP 서비스와 인프라 경험을 포트폴리오 핵심 근거로 반영했습니다.</p>
+          </article>
+          <article>
+            <span>Local clone</span>
+            <strong>SecuR00T BookVillage</strong>
+            <p>웹·모바일·클라우드 보안 실습 프로젝트 구조를 확인했습니다.</p>
+          </article>
+        </div>
+      </section>
+
       <section class="section skills-band" id="skills" aria-labelledby="skills-title">
         <div class="section-heading">
           <p class="eyebrow">Engineering shape</p>
@@ -137,22 +199,22 @@
           <article class="skill-card">
             <i data-lucide="blocks" aria-hidden="true"></i>
             <h3>백엔드 시스템</h3>
-            <p>Spring Boot, REST API, JPA, MyBatis, 도메인 모델링, 배포 가능한 서비스 구조.</p>
+            <p>Spring Boot, Spring MVC, REST API, JPA/MyBatis, 인증·권한, 도메인 모델링.</p>
           </article>
           <article class="skill-card">
             <i data-lucide="shield" aria-hidden="true"></i>
-            <h3>보안 실습</h3>
-            <p>OWASP 관점의 취약점 분석, 웹 공격 시나리오, CBT 기반 반복 학습 도구.</p>
+            <h3>보안 엔지니어링</h3>
+            <p>OWASP Top 10, XSS/SQLi/IDOR 분석, 웹·모바일 공격 시나리오, 안전한 실습 환경.</p>
           </article>
           <article class="skill-card">
-            <i data-lucide="table-properties" aria-hidden="true"></i>
-            <h3>데이터베이스</h3>
-            <p>MySQL, MongoDB, 인덱스, 쿼리 동작, 대량 처리와 영속성 모델링.</p>
+            <i data-lucide="cloud" aria-hidden="true"></i>
+            <h3>인프라와 배포</h3>
+            <p>AWS EC2/S3, Docker Compose, Nginx SSL, GitHub Actions, self-hosted runner.</p>
           </article>
           <article class="skill-card">
-            <i data-lucide="workflow" aria-hidden="true"></i>
-            <h3>배포 흐름</h3>
-            <p>Docker, GitHub Actions, 정적 사이트 배포, 문서화, 재현 가능한 실행 방식.</p>
+            <i data-lucide="database" aria-hidden="true"></i>
+            <h3>AI·데이터</h3>
+            <p>FastAPI, LangChain, ChromaDB, PyTorch, LightGBM, DBSCAN/K-Means/Fuzzy clustering.</p>
           </article>
         </div>
       </section>
@@ -160,7 +222,7 @@
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">백엔드, 보안, 풀스택 프로젝트를 이야기할 준비가 되어 있습니다.</h2>
+          <h2 id="contact-title">백엔드 구현력과 보안 감각을 함께 보여줄 준비가 되어 있습니다.</h2>
         </div>
         <div class="contact-actions">
           <a class="primary-action" href="mailto:qowjdduswkd@naver.com">

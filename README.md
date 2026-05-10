@@ -1,7 +1,7 @@
-# Bae JungYeon Portfolio Lab
+# Bae JungYeon Portfolio
 
-배정연의 GitHub 프로젝트를 면접/포트폴리오용으로 정리한 정적 웹사이트입니다.
-빌드 도구 없이 바로 열 수 있고, GitHub Pages를 켜면 공개 웹사이트로 배포할 수 있습니다.
+배정연의 포트폴리오 PDF, 개인 GitHub 레포, 팀/조직 레포를 함께 검토해서 정리한 정적 포트폴리오 웹사이트입니다.
+백엔드, 보안, AI/데이터, 인프라 프로젝트를 면접에서 바로 설명할 수 있는 형태로 묶었습니다.
 
 ## 바로 실행
 
@@ -19,11 +19,19 @@ cd /Users/jungyeons/Documents/GitHub/MyWebSite
 
 ## 사이트에서 하는 일
 
-- 핵심 프로젝트를 `전체`, `백엔드`, `보안`, `데이터`, `프로덕트`로 필터링
+- 핵심 프로젝트를 `전체`, `우선 어필`, `백엔드`, `보안`, `AI·데이터`, `인프라`, `프로덕트`로 필터링
 - 검색어로 프로젝트 빠르게 찾기
-- 프로젝트별 GitHub 저장소 바로 열기
+- 프로젝트별 GitHub 저장소 또는 PDF 기반 근거 출처 표시
 - 면접/자기소개용 짧은 소개 문구 복사
-- 백엔드, 보안, 데이터, 배포 역량을 한 화면에서 정리
+- 백엔드, 보안, AI/데이터, 배포 역량을 한 화면에서 정리
+
+## 반영한 근거
+
+- `/Users/jungyeons/Downloads/배정연_포트폴리오.pdf`
+- `TrustRide/TrustRide`, `TrustRide/TrustRide_AI`
+- `FC-DEV3-Final-Project/zoop-frontend`
+- 로컬 클론 `book-back`, `book-front`, `book-android`
+- `InsuranceSystem` 관련 조직 레포
 
 ## GitHub Pages로 공개하기
 

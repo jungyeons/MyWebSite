@@ -1,29 +1,29 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Bae JungYeon's portfolio dashboard for backend engineering, security, database, and full-stack projects."
+      content="배정연의 백엔드, 보안, 데이터, 프로덕트 프로젝트를 정리한 포트폴리오 웹사이트입니다."
     >
-    <title>Bae JungYeon | Portfolio Lab</title>
+    <title>배정연 | Portfolio Lab</title>
     <link rel="preconnect" href="https://avatars.githubusercontent.com">
     <link rel="preconnect" href="https://unpkg.com">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Bae JungYeon home">
+      <a class="brand" href="#top" aria-label="배정연 포트폴리오 홈">
         <span class="brand-mark">BJ</span>
-        <span>Bae JungYeon</span>
+        <span>배정연 Portfolio Lab</span>
       </a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+      <nav class="nav-links" aria-label="주요 메뉴">
+        <a href="#projects">프로젝트</a>
+        <a href="#skills">역량</a>
+        <a href="#contact">연락</a>
       </nav>
-      <a class="icon-button" href="https://github.com/jungyeons" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+      <a class="icon-button" href="https://github.com/jungyeons" target="_blank" rel="noreferrer" aria-label="GitHub 프로필 열기">
         <i data-lucide="github" aria-hidden="true"></i>
       </a>
     </header>
@@ -31,121 +31,128 @@
     <main id="top">
       <section class="intro-section" aria-labelledby="intro-title">
         <div class="intro-copy">
-          <p class="eyebrow">Full-stack developer with a security mindset</p>
-          <h1 id="intro-title">Bae JungYeon</h1>
+          <p class="eyebrow">Backend · Security · Data</p>
+          <h1 id="intro-title">배정연</h1>
           <p class="intro-text">
-            I build backend systems, study security through practical attack scenarios,
-            and turn learning logs into usable tools. My work leans toward Spring Boot,
-            databases, cloud deployment, and clear product flows.
+            Java/Spring 기반 백엔드와 데이터베이스를 중심으로 서비스를 만들고,
+            보안 관점에서 취약점 분석과 실전형 학습 도구를 함께 쌓아가는 개발자입니다.
+            이 페이지는 GitHub에 흩어진 프로젝트를 면접에서 바로 설명할 수 있게 정리한 포트폴리오입니다.
           </p>
-          <div class="intro-actions" aria-label="Profile actions">
+          <div class="intro-actions" aria-label="포트폴리오 주요 동작">
             <a class="primary-action" href="#projects">
               <i data-lucide="folder-kanban" aria-hidden="true"></i>
-              View projects
+              핵심 프로젝트 보기
             </a>
             <button class="ghost-action" id="copyPitch" type="button">
               <i data-lucide="copy" aria-hidden="true"></i>
-              Copy intro
+              소개 문구 복사
             </button>
           </div>
         </div>
-        <aside class="profile-panel" aria-label="Profile summary">
+        <aside class="profile-panel" aria-label="프로필 요약">
           <img
             class="avatar"
             src="https://avatars.githubusercontent.com/u/81145288?v=4"
-            alt="Bae JungYeon's GitHub avatar"
+            alt="배정연 GitHub 아바타"
             width="112"
             height="112"
           >
           <dl class="quick-facts">
             <div>
-              <dt>Focus</dt>
-              <dd>Backend, Security, Data</dd>
+              <dt>핵심 방향</dt>
+              <dd>백엔드 구현력과 보안 감각을 같이 보여주는 포트폴리오</dd>
             </div>
             <div>
-              <dt>Stack</dt>
-              <dd>Java, Spring Boot, JPA, MySQL</dd>
+              <dt>주요 스택</dt>
+              <dd>Java, Spring Boot, JPA, MySQL, Docker, GitHub Actions</dd>
             </div>
             <div>
-              <dt>Current edge</dt>
-              <dd>Practical security tools and study systems</dd>
+              <dt>강점</dt>
+              <dd>학습 로그를 실제 도구와 서비스 구조로 바꾸는 실행력</dd>
             </div>
           </dl>
         </aside>
       </section>
 
-      <section class="metrics-section" aria-label="Portfolio signals">
+      <section class="metrics-section" aria-label="포트폴리오 지표">
         <article class="metric">
           <span class="metric-value">40+</span>
-          <span class="metric-label">GitHub repositories</span>
+          <span class="metric-label">GitHub 저장소</span>
         </article>
         <article class="metric">
-          <span class="metric-value">5</span>
-          <span class="metric-label">Core domains</span>
+          <span class="metric-value">4</span>
+          <span class="metric-label">대표 분야</span>
         </article>
         <article class="metric">
           <span class="metric-value">2026</span>
-          <span class="metric-label">Active portfolio refresh</span>
+          <span class="metric-label">포트폴리오 리프레시</span>
         </article>
       </section>
 
       <section class="section" id="projects" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <p class="eyebrow">Selected repository map</p>
-          <h2 id="projects-title">Projects worth opening first</h2>
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="eyebrow">Repository map</p>
+            <h2 id="projects-title">먼저 보여줄 프로젝트</h2>
+          </div>
+          <label class="search-box" for="projectSearch">
+            <i data-lucide="search" aria-hidden="true"></i>
+            <input id="projectSearch" type="search" placeholder="프로젝트 검색" autocomplete="off">
+          </label>
         </div>
 
-        <div class="toolbar" aria-label="Project filters">
+        <div class="toolbar" aria-label="프로젝트 필터">
           <button class="filter is-active" type="button" data-filter="all">
             <i data-lucide="sparkles" aria-hidden="true"></i>
-            All
+            전체
           </button>
           <button class="filter" type="button" data-filter="backend">
             <i data-lucide="server" aria-hidden="true"></i>
-            Backend
+            백엔드
           </button>
           <button class="filter" type="button" data-filter="security">
             <i data-lucide="shield-check" aria-hidden="true"></i>
-            Security
+            보안
           </button>
           <button class="filter" type="button" data-filter="data">
             <i data-lucide="database" aria-hidden="true"></i>
-            Data
+            데이터
           </button>
           <button class="filter" type="button" data-filter="product">
             <i data-lucide="layout-dashboard" aria-hidden="true"></i>
-            Product
+            프로덕트
           </button>
         </div>
 
-        <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+        <p class="result-count" id="projectCount" aria-live="polite"></p>
+        <div class="project-grid" id="projectGrid"></div>
       </section>
 
       <section class="section skills-band" id="skills" aria-labelledby="skills-title">
         <div class="section-heading">
           <p class="eyebrow">Engineering shape</p>
-          <h2 id="skills-title">A stack built around practical delivery</h2>
+          <h2 id="skills-title">프로젝트로 증명하는 역량</h2>
         </div>
         <div class="skill-grid">
           <article class="skill-card">
             <i data-lucide="blocks" aria-hidden="true"></i>
-            <h3>Backend systems</h3>
-            <p>Spring Boot, REST APIs, JPA, MyBatis, service decomposition, and deployment-ready structure.</p>
+            <h3>백엔드 시스템</h3>
+            <p>Spring Boot, REST API, JPA, MyBatis, 도메인 모델링, 배포 가능한 서비스 구조.</p>
           </article>
           <article class="skill-card">
             <i data-lucide="shield" aria-hidden="true"></i>
-            <h3>Security practice</h3>
-            <p>OWASP-style vulnerability analysis, web attack scenarios, CBT tooling, and secure review habits.</p>
+            <h3>보안 실습</h3>
+            <p>OWASP 관점의 취약점 분석, 웹 공격 시나리오, CBT 기반 반복 학습 도구.</p>
           </article>
           <article class="skill-card">
             <i data-lucide="table-properties" aria-hidden="true"></i>
-            <h3>Database thinking</h3>
-            <p>MySQL, MongoDB, indexing, query behavior, large-volume processing, and persistence modeling.</p>
+            <h3>데이터베이스</h3>
+            <p>MySQL, MongoDB, 인덱스, 쿼리 동작, 대량 처리와 영속성 모델링.</p>
           </article>
           <article class="skill-card">
             <i data-lucide="workflow" aria-hidden="true"></i>
-            <h3>Shipping workflow</h3>
-            <p>Docker, GitHub Actions, static delivery, cloud basics, and documentation that keeps projects usable.</p>
+            <h3>배포 흐름</h3>
+            <p>Docker, GitHub Actions, 정적 사이트 배포, 문서화, 재현 가능한 실행 방식.</p>
           </article>
         </div>
       </section>
@@ -153,7 +160,7 @@
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Open to backend, security, and full-stack work.</h2>
+          <h2 id="contact-title">백엔드, 보안, 풀스택 프로젝트를 이야기할 준비가 되어 있습니다.</h2>
         </div>
         <div class="contact-actions">
           <a class="primary-action" href="mailto:qowjdduswkd@naver.com">

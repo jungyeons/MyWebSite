@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Bae JungYeon's portfolio dashboard for backend engineering, security, database, and full-stack projects."
+    >
+    <title>Bae JungYeon | Portfolio Lab</title>
+    <link rel="preconnect" href="https://avatars.githubusercontent.com">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Bae JungYeon home">
+        <span class="brand-mark">BJ</span>
+        <span>Bae JungYeon</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="icon-button" href="https://github.com/jungyeons" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+        <i data-lucide="github" aria-hidden="true"></i>
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="intro-section" aria-labelledby="intro-title">
+        <div class="intro-copy">
+          <p class="eyebrow">Full-stack developer with a security mindset</p>
+          <h1 id="intro-title">Bae JungYeon</h1>
+          <p class="intro-text">
+            I build backend systems, study security through practical attack scenarios,
+            and turn learning logs into usable tools. My work leans toward Spring Boot,
+            databases, cloud deployment, and clear product flows.
+          </p>
+          <div class="intro-actions" aria-label="Profile actions">
+            <a class="primary-action" href="#projects">
+              <i data-lucide="folder-kanban" aria-hidden="true"></i>
+              View projects
+            </a>
+            <button class="ghost-action" id="copyPitch" type="button">
+              <i data-lucide="copy" aria-hidden="true"></i>
+              Copy intro
+            </button>
+          </div>
+        </div>
+        <aside class="profile-panel" aria-label="Profile summary">
+          <img
+            class="avatar"
+            src="https://avatars.githubusercontent.com/u/81145288?v=4"
+            alt="Bae JungYeon's GitHub avatar"
+            width="112"
+            height="112"
+          >
+          <dl class="quick-facts">
+            <div>
+              <dt>Focus</dt>
+              <dd>Backend, Security, Data</dd>
+            </div>
+            <div>
+              <dt>Stack</dt>
+              <dd>Java, Spring Boot, JPA, MySQL</dd>
+            </div>
+            <div>
+              <dt>Current edge</dt>
+              <dd>Practical security tools and study systems</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="metrics-section" aria-label="Portfolio signals">
+        <article class="metric">
+          <span class="metric-value">40+</span>
+          <span class="metric-label">GitHub repositories</span>
+        </article>
+        <article class="metric">
+          <span class="metric-value">5</span>
+          <span class="metric-label">Core domains</span>
+        </article>
+        <article class="metric">
+          <span class="metric-value">2026</span>
+          <span class="metric-label">Active portfolio refresh</span>
+        </article>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected repository map</p>
+          <h2 id="projects-title">Projects worth opening first</h2>
+        </div>
+
+        <div class="toolbar" aria-label="Project filters">
+          <button class="filter is-active" type="button" data-filter="all">
+            <i data-lucide="sparkles" aria-hidden="true"></i>
+            All
+          </button>
+          <button class="filter" type="button" data-filter="backend">
+            <i data-lucide="server" aria-hidden="true"></i>
+            Backend
+          </button>
+          <button class="filter" type="button" data-filter="security">
+            <i data-lucide="shield-check" aria-hidden="true"></i>
+            Security
+          </button>
+          <button class="filter" type="button" data-filter="data">
+            <i data-lucide="database" aria-hidden="true"></i>
+            Data
+          </button>
+          <button class="filter" type="button" data-filter="product">
+            <i data-lucide="layout-dashboard" aria-hidden="true"></i>
+            Product
+          </button>
+        </div>
+
+        <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="section skills-band" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <p class="eyebrow">Engineering shape</p>
+          <h2 id="skills-title">A stack built around practical delivery</h2>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card">
+            <i data-lucide="blocks" aria-hidden="true"></i>
+            <h3>Backend systems</h3>
+            <p>Spring Boot, REST APIs, JPA, MyBatis, service decomposition, and deployment-ready structure.</p>
+          </article>
+          <article class="skill-card">
+            <i data-lucide="shield" aria-hidden="true"></i>
+            <h3>Security practice</h3>
+            <p>OWASP-style vulnerability analysis, web attack scenarios, CBT tooling, and secure review habits.</p>
+          </article>
+          <article class="skill-card">
+            <i data-lucide="table-properties" aria-hidden="true"></i>
+            <h3>Database thinking</h3>
+            <p>MySQL, MongoDB, indexing, query behavior, large-volume processing, and persistence modeling.</p>
+          </article>
+          <article class="skill-card">
+            <i data-lucide="workflow" aria-hidden="true"></i>
+            <h3>Shipping workflow</h3>
+            <p>Docker, GitHub Actions, static delivery, cloud basics, and documentation that keeps projects usable.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Open to backend, security, and full-stack work.</h2>
+        </div>
+        <div class="contact-actions">
+          <a class="primary-action" href="mailto:qowjdduswkd@naver.com">
+            <i data-lucide="mail" aria-hidden="true"></i>
+            Email
+          </a>
+          <a class="ghost-action link-action" href="https://github.com/jungyeons" target="_blank" rel="noreferrer">
+            <i data-lucide="github" aria-hidden="true"></i>
+            GitHub
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

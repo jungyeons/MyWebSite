@@ -8,7 +8,7 @@
 터미널에서:
 
 ```bash
-cd /Users/jungyeons/Documents/GitHub/MyWebSite
+cd MyWebSite
 ./run-local.command
 ```
 
@@ -27,7 +27,7 @@ cd /Users/jungyeons/Documents/GitHub/MyWebSite
 
 ## 반영한 근거
 
-- `/Users/jungyeons/Downloads/배정연_포트폴리오.pdf`
+- 개인 포트폴리오 PDF(로컬 참고 자료이며 저장소에는 포함하지 않음)
 - `TrustRide/TrustRide`, `TrustRide/TrustRide_AI`
 - `FC-DEV3-Final-Project/zoop-frontend`
 - 로컬 클론 `book-back`, `book-front`, `book-android`
@@ -52,6 +52,6 @@ https://jungyeons.github.io/MyWebSite/
 
 ## 수정 포인트
 
-프로젝트 목록은 [app.js](/Users/jungyeons/Documents/GitHub/MyWebSite/app.js)의 `projects` 배열에서 관리합니다.
-문구와 레이아웃은 [index.html](/Users/jungyeons/Documents/GitHub/MyWebSite/index.html),
-디자인은 [styles.css](/Users/jungyeons/Documents/GitHub/MyWebSite/styles.css)를 수정하면 됩니다.
+프로젝트 목록은 [app.js](./app.js)의 `projects` 배열에서 관리합니다.
+문구와 레이아웃은 [index.html](./index.html),
+디자인은 [styles.css](./styles.css)를 수정하면 됩니다.
